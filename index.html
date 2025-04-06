@@ -1,1 +1,303 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junaid Kirkire - CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+            --border-color: #ddd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 5px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .company {
+            font-weight: bold;
+        }
+        
+        .period {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .year {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .degree {
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .job-title {
+                flex-direction: column;
+            }
+            
+            .period {
+                margin-top: 5px;
+            }
+        }
+        
+        .highlight {
+            background-color: rgba(52, 152, 219, 0.1);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JUNAID KIRKIRE</h1>
+            <div class="contact-info">
+                +91 99309 14541 | <a href="mailto:junaidkirkire@gmail.com">junaidkirkire@gmail.com</a>
+            </div>
+        </header>
+        
+        <section id="summary">
+            <h2>SUMMARY</h2>
+            <ul>
+                <li>Technical Lead with more than 10 years of experience in designing, building and implementing software applications in diverse domains.</li>
+                <li>Proven expertise in developing responsive and scalable web applications on AWS, and working on multiple projects using Node.js, Ruby, Ruby-on-Rails, Python, Bash scripting, Windows, OSX and ESXi administration, .NET (C#, WCF, SQL Server 2008, IIS 7.0), Java, Spring, etc.</li>
+                <li>Proficiency in designing and optimising code using Log4Net, SQL Server, MongoDB, and implementing queuing using RabbitMQ.</li>
+                <li>Solid ability to work uninitiated and in teams to gather, interpret business requirements, and convert them into functional code for implementation.</li>
+                <li>Well-developed communication skills, adaptable and flexible to shifting priorities in a dynamic environment.</li>
+            </ul>
+        </section>
+        
+        <section id="skills">
+            <h2>SKILL SET</h2>
+            <ul>
+                <li><span class="skill-category">Languages:</span> Ruby, Python, TypeScript, C#, T-SQL, PHP, Java, JavaScript</li>
+                <li><span class="skill-category">Databases:</span> SQL Server 2008 Enterprise Edition, MySQL, MongoDB</li>
+                <li><span class="skill-category">Frameworks:</span> Spring, Sinatra, .NET, LINQ, Windows Communication Foundation (SOAP, RESTful Services), WPF (Windows Presentation Foundation), jQuery, Django, Flask, Nest.js</li>
+                <li><span class="skill-category">Infrastructure:</span> AWS (EC2/EKS/Amplify/IAM), VMware, ESXi & OS X System Administration, IIS 7.0, RabbitMQ, Memcached, Kaa, Linux (Debian), Docker, Kubernetes</li>
+            </ul>
+        </section>
+        
+        <section id="experience">
+            <h2>WORK EXPERIENCE</h2>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Head of Engineering | <span class="company">Venwiz, India</span></span>
+                    <span class="period">Jan 2021 – Present</span>
+                </div>
+                <ul>
+                    <li>Joined Venwiz as its founding engineer to build the first-of-its-kind B2B marketplace for manufacturing service vendors - a deep-search engine which accurately maps vendors to industrial projects. It also digitises the entire procurement process end-to-end.</li>
+                    <li>Raised and managed a 15-member team and built the entire product from scratch. Owned system design and architecture. Tech stack - React.js/Node.js/Python/Kubernetes.</li>
+                    <li>Got promoted to Head of Engineering and contributed to developing product OKRs and strategy.</li>
+                    <li>Implemented vendor search product which takes engineering documents as inputs using Large Language Models (LLM), vector databases/embeddings.</li>
+                    <li>Developed various products like eRFX (e-portal for RFP - Request for Proposal, RFQ - Request for Quote), milestone management tracker, procurement scheduler.</li>
+                    <li>Team management, mentoring, coaching.</li>
+                    <li>Setup best engineering practices across dev, QA teams.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Lead Engineer | <span class="company">LEAD School, India</span></span>
+                    <span class="period">July 2020 – Dec 2020</span>
+                </div>
+                <ul>
+                    <li>Led the development of the "Teacher Mobile App" (that helps school teachers educate children online during Covid-19) using React and Node.js framework, through a team of 6 members.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Lead Engineer | <span class="company">Turtlemint, India</span></span>
+                    <span class="period">Jan 2020 – June 2020</span>
+                </div>
+                <ul>
+                    <li>Directed the development of next-gen projects, including an automated policy parser with the ability to read policy documents to extract data and automate workflows. Used Python & Spring framework.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Software Engineer | <span class="company">BrowserStack, India</span></span>
+                    <span class="period">Oct 2015 – Dec 2019</span>
+                </div>
+                <ul>
+                    <li>Managed, scaled, and automated BrowserStack's entire desktop infrastructure consisting of 2500+ Windows virtual machines, 900+ OSX terminals and ESXis.</li>
+                    <li>Developed and optimised solutions for desktop infrastructure which enables BrowserStack's Live and Automate products.</li>
+                    <li>Built an intelligent deploy system and security solutions for Windows/OSX terminals.</li>
+                    <li>Architected and developed an intelligent platform testing mechanism using RSpec which tests for errors post-platform changes.</li>
+                    <li>Created the WordPress templating system for BrowserStack's front-end.</li>
+                    <li>Set up backend facilities for automating processes of sales and business operations.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Senior Software Engineer | <span class="company">StoryLTD.com</span></span>
+                    <span class="period">Jan 2014 – Sept 2015</span>
+                </div>
+                <ul>
+                    <li>Developed the online shopping website's real-time, online auction platform API from scratch in WCF (Windows Communication Foundation).</li>
+                    <li>Oversaw the development of the auctioneer desktop application used in live auctions for capturing live bidding using WPF (Windows Presentation Foundation).</li>
+                    <li>Built & led the team for search functionality for the auction platform using Amazon CloudSearch.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Software Engineer | <span class="company">Travelyaari.com</span></span>
+                    <span class="period">March 2012 – Dec 2013</span>
+                </div>
+                <ul>
+                    <li>Designed the end-to-end architecture & coded modules of the company's flagship product "Global Distribution System" (GDS) (An aggregator of bus inventories across several external components) with its back-end being used by MakeMyTrip, Cleartrip, etc., for their bus booking segment.</li>
+                    <li>Introduced and implemented queuing (using RabbitMQ) in the core product which helped it scale and improve business even on high-traffic days on websites.</li>
+                    <li>Implemented downstream optimization (built using Log4Net, SQL Server, MongoDB) single-handedly which improved booking success.</li>
+                    <li>Integrated third-party bus inventory systems with the GDS using Windows Communication Foundation.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Software Engineer | <span class="company">Gupshup</span></span>
+                    <span class="period">Dec 2010 – Dec 2011</span>
+                </div>
+                <ul>
+                    <li>Developed the Reply-All Chat (Group SMS product used by people for chatting and keeping in touch).</li>
+                    <li>Built an internal MIS module for generating statistics for reporting purposes.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <div class="education-item">
+                <div><span class="year">2011</span> <span class="degree">Master of Computer Applications</span> from VJTI, Mumbai (Ranked 1st in the entrance exam)</div>
+            </div>
+            <div class="education-item">
+                <div><span class="year">2007</span> <span class="degree">Bachelor of Science</span> from University of Mumbai, India</div>
+            </div>
+        </section>
+        
+        <section id="courses">
+            <h2>COURSES</h2>
+            <ul>
+                <li>Neural Networks and Deep Learning by Andrew Ng at Coursera</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>Last updated: April 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
